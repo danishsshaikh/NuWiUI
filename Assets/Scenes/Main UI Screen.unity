@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "With Love, \nDan"
+  m_text: "With Love, \n:Dan"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5161b1fe987116140b98dee82086ad67, type: 2}
   m_sharedMaterial: {fileID: 21337414950986098, guid: 5161b1fe987116140b98dee82086ad67,
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_margin: {x: -18.119814, y: 0, z: 3.4607487, w: 3.718395}
   m_textInfo:
     textComponent: {fileID: 1563673442}
-    characterCount: 15
+    characterCount: 16
     spriteCount: 0
     spaceCount: 3
     wordCount: 3
