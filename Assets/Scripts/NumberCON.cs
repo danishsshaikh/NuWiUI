@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NumberCON : MonoBehaviour
 {
-    [SerializeField]int min;
+    [SerializeField] int min;
     [SerializeField] int max;
     [SerializeField] int guess;
     void Start()
@@ -31,34 +31,26 @@ public class NumberCON : MonoBehaviour
         max = max + 1;
     }
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            //Debug.Log("Up Arrow");
-            min = guess;
-            NextGuess();
-            //guess = (max + min) / 2;
-            //Debug.Log("Is it higher or lower than:" + guess);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            //Debug.Log("Down Arrow");
-            max = guess;
-            NextGuess();
-            //guess = (max + min) / 2;
-            //Debug.Log("Is it higher or lower than:" + guess);
-        }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Debug.Log("Enter");
-            Debug.Log("YES, I did it");
-            StartGame();
-        }
-    }
     void NextGuess()
     {
         guess = (max + min) / 2;
         Debug.Log("Is it higher or lower than:" + guess);
+    }
+
+    public void OnPressHigher()
+    {
+        min = guess;
+        NextGuess();
+    }
+
+    public void OnPressLower()
+    {
+        max = guess;
+        NextGuess();
+    }
+
+    public void OnPressMiddle()
+    {
+        StartGame();
     }
 }
