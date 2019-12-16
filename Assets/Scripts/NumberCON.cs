@@ -24,15 +24,17 @@ public class NumberCON : MonoBehaviour
     void NextGuess()
     {
         guess = (max + min) / 2;
+        ehGuess.text = guess.ToString();
+
     }
 
-    public void OnPressHigher()
+    public void OnPressLower()
     {
         min = guess;
         NextGuess();
     }
 
-    public void OnPressLower()
+    public void OnPressHigher()
     {
         max = guess;
         NextGuess();
