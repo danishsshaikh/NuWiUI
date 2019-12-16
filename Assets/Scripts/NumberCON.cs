@@ -16,9 +16,9 @@ public class NumberCON : MonoBehaviour
 
     void StartGame()
     {
-        max = max + 1;
         guess = (max + min) / 2;
         ehGuess.text = guess.ToString();
+        max = max + 1;
     }
 
     void NextGuess()
