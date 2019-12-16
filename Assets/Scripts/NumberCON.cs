@@ -16,16 +16,15 @@ public class NumberCON : MonoBehaviour
 
     void StartGame()
     {
-        guess = (max + min) / 2;
-        ehGuess.text = guess.ToString();
+        NextGuess();
         max = max + 1;
     }
 
     void NextGuess()
     {
-        guess = (max + min) / 2;
+        //guess = (max + min) / 2;
+        guess = Random.Range(min, max);
         ehGuess.text = guess.ToString();
-
     }
 
     public void OnPressLower()
