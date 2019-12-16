@@ -8,5 +8,7 @@ public class LastScreenLoader : MonoBehaviour
     public void LastScreen()
     {
         //SceneManager.LoadScene(MainUIScreen);
+        int currentSceneIndex = 2 ;
+        SceneManager.LoadScene(currentSceneIndex - 2);
     }
 }
