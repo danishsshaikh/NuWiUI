@@ -6,7 +6,7 @@ public class NumberCON : MonoBehaviour
 {
     [SerializeField] int min;
     [SerializeField] int max;
-    [SerializeField] int guess;
+    int guess;
     void Start()
     {
         StartGame();       
@@ -16,8 +16,13 @@ public class NumberCON : MonoBehaviour
     {
         max = max + 1;
         guess = (max + min) / 2;
-
     }
+
+    void NextGuess()
+    {
+        guess = (max + min) / 2;
+    }
+
     public void OnPressHigher()
     {
         min = guess;
