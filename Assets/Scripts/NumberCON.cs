@@ -23,7 +23,7 @@ public class NumberCON : MonoBehaviour
     void NextGuess()
     {
         guess = (max + min) / 2;
-        Debug.Log("Is it higher or lower than:" + guess);
+       
     }
 
     public void OnPressHigher()
@@ -38,8 +38,4 @@ public class NumberCON : MonoBehaviour
         NextGuess();
     }
 
-    public void OnPressMiddle()
-    {
-        StartGame();
-    }
 }
