@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class NumberCON : MonoBehaviour
 {
-    int min;
-    int max;
-    int guess;
+    [SerializeField]int min;
+    [SerializeField] int max;
+    [SerializeField] int guess;
     void Start()
     {
         StartGame();       
