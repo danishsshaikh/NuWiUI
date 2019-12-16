@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NumberCON : MonoBehaviour
 {
     [SerializeField] int min;
     [SerializeField] int max;
+    [SerializeField] TextMeshProUGUI ehGuess;
     int guess;
     void Start()
     {
@@ -16,6 +18,7 @@ public class NumberCON : MonoBehaviour
     {
         max = max + 1;
         guess = (max + min) / 2;
+        ehGuess.text = guess.ToString();
     }
 
     void NextGuess()
