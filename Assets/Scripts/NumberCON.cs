@@ -17,7 +17,7 @@ public class NumberCON : MonoBehaviour
     void StartGame()
     {
         NextGuess();
-        max = max + 1;
+        //max = max + 1;
     }
 
     void NextGuess()
