@@ -14,18 +14,10 @@ public class NumberCON : MonoBehaviour
 
     void StartGame()
     {
-        max = 1000;
-        min = 1;
-        guess = 500;
         max = max + 1;
-    }
-
-    void NextGuess()
-    {
         guess = (max + min) / 2;
-       
-    }
 
+    }
     public void OnPressHigher()
     {
         min = guess;
