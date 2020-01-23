@@ -19,7 +19,7 @@ Think of a number, Feedback with higher or lower.
 - Silly, maybe?
 
 
-## Useful Resources and Tools Used:
+## :link: Useful Resources and Tools Used:
 
 - [DaFont](https://www.dafont.com/)
 
