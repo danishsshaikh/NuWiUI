@@ -1,7 +1,8 @@
-# NumberWizard-UI
+# :1234: NumberWizard-UI :1234:	
 
 Simple game based on Binary Sort Algorithm
-Thinking of a number, Feedback with higher or lower
+
+Think of a number, Feedback with higher or lower.
  
 ## :video_game: Game Design
 
